@@ -32,11 +32,11 @@ El servicio web es una aplicación modular autocontenidas que se pueden describi
 
 3\.1. **DIAGRAMA DE ARQUITECTURA**
 
-![Diagrama_Arquitectura.PNG](diagrama2FDiagrama_Arquitectura.PNG)
+![Diagrama_Arquitectura.PNG](Diagrama%2FDiagrama_Arquitectura.PNG)
 
 3\.3. **DIAGRAMA DE FLUJO**
 
-![Diagrama_flujo.PNG](diagrama2FDiagrama_flujo.PNG)
+![Diagrama_flujo.PNG](Diagrama%2FDiagrama_flujo.PNG)
 
 4. **DESARROLLO**
 
