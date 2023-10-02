@@ -16,12 +16,12 @@ class MongoDriver:
         # Send a ping to confirm a successful connection
 
     def insert_record(self, record: dict, username: str):
-        self.client.get_database('pry_test_fin_tratam_datos').get_collection(f'{username}_TEST-FINAL').insert_one(record)
+        self.client.get_database('pry_prueba_fin_tratam_datos').get_collection(f'{username}_PRUEBA-FINAL').insert_one(record)
     def consulta_record(self,username: str):
-        registros = self.client.get_database('pry_test_fin_tratam_datos').get_collection(f'{username}_TEST-FINAL').find({})
+        registros = self.client.get_database('pry_prueba_fin_tratam_datos').get_collection(f'{username}_PRUEBA-FINAL').find({})
         return registros
     def consulta_record_one(self,record: dict, username: str):
-        registros = self.client.get_database('pry_test_fin_tratam_datos').get_collection(f'{username}_TEST-FINAL').find_one(record)
+        registros = self.client.get_database('pry_prueba_fin_tratam_datos').get_collection(f'{username}_PRUEBA-FINAL').find_one(record)
         return registros
 
     def test_connection(self):

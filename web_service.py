@@ -11,6 +11,15 @@ app = Flask(__name__)
 def hello_world():
     return "<h2>Hola Mundo!</h2>"
 
+@app.route('/ws_datos_id/<id>', methods=['GET'])
+def get_ws_datos_id(id):
+    mongodb = MongoDriver()
+    response_raw = {
+            "COMPANIA": id
+            }
+    datos = mongodb.consulta_record_one(record=response_raw,username="REGISTROS")
+    response = json_util.dumps(datos)
+    return Response(response, mimetype="application/json")
 @app.route('/ws_datos', methods=['GET'])
 def get_ws_datos():
     mongodb = MongoDriver()
